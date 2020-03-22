@@ -30,7 +30,7 @@ Korisnik:
 
 •	Mogućnost pretplate,tj.pravljenje profila I odjave sa sistema,tj.brisanje profila
 
-•	Mogućnost prijavljivanja I odjavljivanja na sistem
+•	Mogućnost prijavljivanja i odjavljivanja na sistem
 
 •	Ostavljanje komentara na događaj,ocjenjivanje događaja kao I same aplikacije
 
@@ -44,7 +44,7 @@ Korisnik:
 
 •	Mogućnost obavještavanja korisnika da rezervacija nije prošla ili da je događaj otkazan
 
-•	Mogućnost sticanja 2 kategorije posebnog (VIP) statusa – sreberni I zlatni status
+•	Mogućnost sticanja 2 kategorije posebnog (VIP) statusa – srebreni i zlatni status
 
 •	Srebreni status mogu dobiti korisnici koji u toku jednog mjeseca rezervišu 5-10 događaja (koje u međuvremenu ne otkažu)
 
@@ -52,7 +52,7 @@ Korisnik:
 
 •	Mogućnost obavještenja korisnika da je ostvario mogućnost za neki od posebnih statusa.Korisnici sa posebnim statusom u sljedećem mjesecu ostvaruju pogodnosti shodno koji su status imali-Srebreni status ostvaruje 10% na 2 rezervacije po želji u sljedećem mjesecu,Zlatni status ostvaruje 30% na 5 rezervacija po želji u sljedećem mjesecu
 
-•	Poseban status mogu dobiti I korisnici koji izvrše uplatu za jednu godinu-takvi korisnici imaju na raspolaganju 20% na 10 rezervacija po želji tokom cijele godine
+•	Poseban status mogu dobiti i korisnici koji izvrše uplatu za jednu godinu-takvi korisnici imaju na raspolaganju 20% na 10 rezervacija po želji tokom cijele godine
 
 •	Poseban status za koji korisnik plaća se može prekinuti
 
@@ -60,7 +60,7 @@ Korisnik:
 
 •	Mogućnost povezivanja događaja sa matičnom web stranicom za dobijanje više detalja
 
-•	Mogućnost odgođenog plaćanja I u toj situaciji obavještavati korisnika do kada treba da plati
+•	Mogućnost odgođenog plaćanja i u toj situaciji obavještavati korisnika do kada treba da plati
 
 •	Mogućnost online plaćanja rezervacija
 
@@ -74,9 +74,7 @@ Korisnik:
 
 •	Mogućnost printanja bilo karte ili potvrde o odrađenoj rezervaciji preko aplikacije,tj.mogućnost printanja izvještaja o stanju rezervacije
 
-•	Mogućnost sakrivanja vijesti za objekte koje ne želi da posjećuje
-
-•	Mogućnost provjere da li su sve karte ili rezervacije rasprodate-npr.u nekom ćošku na stranici tog eventa da piše kako je sve popunjeno
+•	Mogućnost provjere popunjenosti kapaciteta događaja
 
 •	Mogućnost pregleda rezervisanih događaja na profilu
 
@@ -85,7 +83,7 @@ Korisnik:
 
 Ustanova:
 
-•	Mogućnost da kreira I briše ustanovu
+•	Mogućnost da kreira i briše ustanovu
 
 •	Mogućnost da dodaje novi događaj
 
@@ -93,7 +91,7 @@ Ustanova:
 
 •	Mogućnost kontrole rezervacija
 
-•	Mogućnost stavljanja limita na rezervacije I otkazivanje događaja
+•	Mogućnost stavljanja limita na rezervacije i otkazivanje događaja
 
 •	Mogućnost editovanja profila 
 
@@ -104,19 +102,19 @@ Ustanova:
 
 Administrator:
 
-•	Mogućnost dodavanja događaja kao I brisanja 
+•	Mogućnost dodavanja događaja kao i brisanja 
 
 •	Mogućnost odobravanja korisničkih događaja
 
-•	Mogućnost ažuriranja stranice I informacija vezanih za mjesta za koje su namijenjeni događaji u ovoj aplikaciji
+•	Mogućnost ažuriranja stranice i informacija vezanih za mjesta za koje su namijenjeni događaji u ovoj aplikaciji
 
 •	Mogućnost brisanja nekorištenih profila
 
 •	Mogućnost kontrole kreiranja profila
 
-•	Mogućnost kontrole rezervacija I plaćanja
+•	Mogućnost kontrole rezervacija i plaćanja
 
-•	Mogućnost kontrole komentara I brisanja neprimjerenih
+•	Mogućnost kontrole komentara i brisanja neprimjerenih
 
 •	Mogućnost sastavljanja preporuke za događaje 
 
@@ -125,13 +123,13 @@ Akteri
 ____________________________________________________________________________________________________________________________________________
 
 
-•	Guest-neprijavljeni posjetilac,ima mogućnost da se registruje ili prijavi u aplikaciju ukoliko ima već prije kreiran korisnički račun,mogućnost pregleda događaja I važnih datuma bez prijave
+•	Guest-neprijavljeni posjetilac,ima mogućnost da se registruje ili prijavi u aplikaciju ukoliko ima već prije kreiran korisnički račun,mogućnost pregleda događaja i važnih datuma bez prijave
 
 •	User-prijavljeni korisnik koji ima mogućnost da rezerviše mjesto na događaju,pošalje zahtjev za dodavanjem nekog događaja,daje komentar,ocjenjuje događaj ili aplikaciju
 
 •	VIP user-user koji ima poseban status zbog broja ostvaernih I plaćenih rezervacija u jednom mjesecu ili korisnik koji je izvršio uplatu da bude korisnik sa posebnim statusom,ima iste mogućnosti kao I klasični user,samo što može da odabere određen broj puta popust na neki događaj u mjesecu (odnosno godini) u kojem je proglašen za VIP I ima veću prednost prilikom rezervacije u odnosu na klasičnog usera
 
-•	Administrator-korisnik koji ima mogućnost praćenja rezervacija,uređivanja stranica događaja/ustanova,kontrolu I brisanje 
+•	Administrator-korisnik koji ima mogućnost praćenja rezervacija,uređivanja stranica događaja/ustanova,kontrolu i brisanje 
 komentara,profila,davanje dozvola za dodavanjem događaja
 
 •	Ustanova-prijavljeni korisnik koji ima mogućnost da kreira profil ustanove,kreira događaj,prati stanje rezervacija,daje ovlast nekom korisniku da u ime nje kreira događaje
