@@ -26,44 +26,31 @@ ________________________________________________________________________________
 
 Korisnik:
 
-•	Pretraga novosti tj.pregledanje zadnje dodanih događaja
+•	Pretraga novosti (događaja)
 
-•	Mogućnost pretplate,tj.pravljenje profila i odjave sa sistema,tj.brisanje profila
-
-•	Mogućnost prijavljivanja i odjavljivanja na sistem
+•	Mogućnost pravljenja 2 vrste profila - besplatni profil i VIP profil
 
 •	Ostavljanje komentara na događaj,ocjenjivanje događaja kao i same aplikacije
 
-•	Mogućnost čuvanja događaja o kojima želi još da razmisli
+•	Mogućnost pravljenja liste želja,te pregled svih događaja koje je rezervisao
 
 •	Mogućnost rezervacije mjesta ili karte za događaj
 
 •	Mogućnost otkazivanja rezervacije
 
-•	Mogućnost sticanja 2 kategorije posebnog (VIP) statusa – srebreni i zlatni status
-
-•	Poseban status mogu dobiti i korisnici koji izvrše uplatu za jednu godinu-takvi korisnici imaju na raspolaganju 20% na 10 rezervacija po želji tokom cijele godine
-
-•	Poseban status za koji korisnik plaća se može prekinuti
-
-•	Mogućnost uređivanja profila,pregled historije pretraživanja,rezervacija
-
-•	Mogućnost odgođenog plaćanja i u toj situaciji obavještavati korisnika do kada treba da plati
+•	Mogućnost sticanja 2 kategorije posebnog (VIP) statusa – srebreni i zlatni status,na osnovu broja transakcija u aplikaciji
 
 •	Mogućnost online plaćanja rezervacija
-
-•	Mogućnost filtracije vijesti
 
 •	Mogućnost printanja bilo karte ili potvrde o odrađenoj rezervaciji preko aplikacije,tj.mogućnost printanja izvještaja o stanju rezervacije
 
 •	Mogućnost provjere popunjenosti kapaciteta događaja
 
-•	Mogućnost pregleda rezervisanih događaja na profilu
-
 •	Mogućnost slanja zahtjeva za dodavanjem događaja u ime neke ustanove
 
 
 Ustanova:
+____________________________________________________________________________________________________________________________________________
 
 •	Mogućnost da kreira i briše ustanovu
 
@@ -85,6 +72,7 @@ Ustanova:
 
 
 Administrator:
+____________________________________________________________________________________________________________________________________________
 
 •	Mogućnost dodavanja događaja kao i brisanja 
 
@@ -99,8 +87,6 @@ Administrator:
 •	Mogućnost kontrole rezervacija i plaćanja
 
 •	Mogućnost kontrole komentara i brisanja neprimjerenih
-
-•	Mogućnost sastavljanja preporuke za događaje 
 
 •	Mogućnost kontrole i dodjele VIP statusa za korisnike
 
