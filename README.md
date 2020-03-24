@@ -98,6 +98,7 @@ ________________________________________________________________________________
 •	Guest-neprijavljeni posjetilac
 
 •	User-prijavljeni korisnik 
+
 •	VIP user-ima iste mogućnosti kao i klasični user,samo što može da odabere određen broj puta popust na neki događaj u mjesecu (odnosno godini) u kojem je proglašen za VIP i ima veću prednost prilikom rezervacije u odnosu na klasičnog usera
 
 •	Administrator
