@@ -74,7 +74,7 @@ ________________________________________________________________________________
 Administrator:
 ____________________________________________________________________________________________________________________________________________
 
-•	Mogućnost dodavanja događaja kao i brisanja 
+•	Mogućnost uređivanja događaja
 
 •	Mogućnost odobravanja korisničkih događaja
 
@@ -95,12 +95,12 @@ Akteri
 ____________________________________________________________________________________________________________________________________________
 
 
-•	Guest-neprijavljeni posjetilac
+•	Guest-neprijavljeni posjetilac,ima mogućnost pregleda osnovnih informacija i kreiranje profila
 
 •	User-prijavljeni korisnik 
 
 •	VIP user-ima iste mogućnosti kao i klasični user,samo što može da odabere određen broj puta popust na neki događaj u mjesecu (odnosno godini) u kojem je proglašen za VIP i ima veću prednost prilikom rezervacije u odnosu na klasičnog usera
 
-•	Administrator
+•	Ustanova-korisnik koji predstavlja pravno lice,organizator događaja
 
-•	Ustanova
+•	Administrator-osoba koja drži aplikaciju pod kontrolom i ima najveće ovlasti
