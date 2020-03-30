@@ -2458,7 +2458,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"top": 32,
+											"left": 16,
+											"top": 48,
 											"height": 13
 										},
 										{
@@ -2468,11 +2469,11 @@
 												"$ref": "AAAAAAFxKSKrsDUKiwo="
 											},
 											"font": "Arial;13;1",
-											"left": 117,
-											"top": 567,
-											"width": 93.919921875,
+											"left": 125,
+											"top": 575,
+											"width": 130.74267578125,
 											"height": 13,
-											"text": "prelazak obicni"
+											"text": "prelazak-obicni profil"
 										},
 										{
 											"_type": "LabelView",
@@ -2482,7 +2483,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"top": 32,
+											"left": 16,
+											"top": 48,
 											"width": 86.6708984375,
 											"height": 13,
 											"text": "(from Activity1)"
@@ -2495,15 +2497,16 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"top": 32,
+											"left": 16,
+											"top": 48,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 112,
-									"top": 560,
-									"width": 103.919921875,
+									"left": 120,
+									"top": 568,
+									"width": 140.74267578125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFxKSKrsDUL7NA="
@@ -2521,9 +2524,9 @@
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 112,
-							"top": 560,
-							"width": 103.919921875,
+							"left": 120,
+							"top": 568,
+							"width": 140.74267578125,
 							"height": 41,
 							"nameCompartment": {
 								"$ref": "AAAAAAFxKSKrsDUKiwo="
@@ -2721,7 +2724,7 @@
 							"tail": {
 								"$ref": "AAAAAAFxKSOh2DVGO08="
 							},
-							"points": "102:544;136:544;136:560",
+							"points": "102:544;136:544;136:568",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFxKSWkRzWce4U="
@@ -2830,7 +2833,7 @@
 							"tail": {
 								"$ref": "AAAAAAFxKSKrsDUJ2m4="
 							},
-							"points": "163:600;163:632;102:632",
+							"points": "163:608;163:632;102:632",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFxKSZ6ZzW/Abs="
@@ -5390,7 +5393,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFxKKaKljCIry4="
 					},
-					"name": "prelazak obicni"
+					"name": "prelazak-obicni profil"
 				},
 				{
 					"_type": "UMLDecisionNode",
