@@ -74,7 +74,7 @@ ________________________________________________________________________________
 Administrator:
 ____________________________________________________________________________________________________________________________________________
 
-•	Mogućnost dodavanja događaja kao i brisanja 
+•	Mogućnost uređivanja događaja
 
 •	Mogućnost odobravanja korisničkih događaja
 
@@ -95,15 +95,12 @@ Akteri
 ____________________________________________________________________________________________________________________________________________
 
 
-•	Guest-neprijavljeni posjetilac,ima mogućnost da se registruje ili prijavi u aplikaciju ukoliko ima već prije kreiran korisnički račun,mogućnost pregleda događaja i važnih datuma bez prijave
+•	Guest-neprijavljeni posjetilac,ima mogućnost pregleda osnovnih informacija i kreiranje profila
 
-•	User-prijavljeni korisnik koji ima mogućnost da rezerviše mjesto na događaju,pošalje zahtjev za dodavanjem nekog događaja,daje komentar,ocjenjuje događaj ili aplikaciju
+•	User-prijavljeni korisnik 
 
-•	VIP user-user koji ima poseban status zbog broja ostvarenih i plaćenih rezervacija u jednom mjesecu ili korisnik koji je izvršio uplatu da bude korisnik sa posebnim statusom,ima iste mogućnosti kao i klasični user,samo što može da odabere određen broj puta popust na neki događaj u mjesecu (odnosno godini) u kojem je proglašen za VIP i ima veću prednost prilikom rezervacije u odnosu na klasičnog usera
+•	VIP user-ima iste mogućnosti kao i klasični user,samo što može da odabere određen broj puta popust na neki događaj u mjesecu (odnosno godini) u kojem je proglašen za VIP i ima veću prednost prilikom rezervacije u odnosu na klasičnog usera
 
-•	Administrator-korisnik koji ima mogućnost praćenja rezervacija,uređivanja stranica događaja/ustanova,kontrolu i brisanje 
-komentara,profila,davanje dozvola za dodavanjem događaja,određivanje VIP statusa korisnika
+•	Ustanova-korisnik koji predstavlja pravno lice,organizator događaja
 
-•	Ustanova-prijavljeni korisnik koji ima mogućnost da kreira profil ustanove,kreira događaj,prati stanje rezervacija,daje ovlast nekom korisniku da u ime nje kreira događaje,da daje VIP status korisnicima
-
-
+•	Administrator-osoba koja drži aplikaciju pod kontrolom i ima najveće ovlasti
