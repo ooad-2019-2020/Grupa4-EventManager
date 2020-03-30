@@ -5755,17 +5755,18 @@
 									"model": {
 										"$ref": "AAAAAAFxK08COF35z+o="
 									},
-									"visible": false,
 									"font": "Arial;13;0",
-									"left": 792,
-									"top": 289,
+									"left": 750,
+									"top": 335,
+									"width": 54.91357421875,
 									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
+									"alpha": -0.06656861010130433,
+									"distance": 46,
 									"hostEdge": {
 										"$ref": "AAAAAAFxK08COF36FkM="
 									},
-									"edgePosition": 1
+									"edgePosition": 1,
+									"text": "VIP uslov"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -7051,6 +7052,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFxK0wt9V1PBy8="
 					},
+					"name": "VIP uslov",
 					"source": {
 						"$ref": "AAAAAAFxK04TKF2tA0E="
 					},
