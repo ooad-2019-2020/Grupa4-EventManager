@@ -22955,6 +22955,7 @@
 								"reference": {
 									"$ref": "AAAAAAFxtas+Ew58jjw="
 								},
+								"aggregation": "composite",
 								"multiplicity": "0..*"
 							},
 							"end2": {
@@ -22966,7 +22967,6 @@
 								"reference": {
 									"$ref": "AAAAAAFxtaY4Jg39fuY="
 								},
-								"aggregation": "composite",
 								"multiplicity": "1"
 							}
 						},
@@ -26516,6 +26516,7 @@
 								"reference": {
 									"$ref": "AAAAAAFxtcm+xRE0C64="
 								},
+								"aggregation": "shared",
 								"multiplicity": "1"
 							},
 							"end2": {
@@ -26527,7 +26528,6 @@
 								"reference": {
 									"$ref": "AAAAAAFxtbDf2w73fyI="
 								},
-								"aggregation": "shared",
 								"multiplicity": "0..*"
 							}
 						},
