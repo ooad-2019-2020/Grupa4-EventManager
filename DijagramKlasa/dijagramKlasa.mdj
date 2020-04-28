@@ -19593,6 +19593,228 @@
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAFxv2te3s4SvrA="
 							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAFxv4Gpa8rKC5M=",
+							"_parent": {
+								"$ref": "AAAAAAFxtXWCXQvTFRE="
+							},
+							"model": {
+								"$ref": "AAAAAAFxv4GpacrI1GQ="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAFxv4Gpa8rLCBw=",
+									"_parent": {
+										"$ref": "AAAAAAFxv4Gpa8rKC5M="
+									},
+									"model": {
+										"$ref": "AAAAAAFxv4GpacrI1GQ="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFxv4Gpa8rMz2s=",
+											"_parent": {
+												"$ref": "AAAAAAFxv4Gpa8rLCBw="
+											},
+											"font": "Arial;13;0",
+											"left": 69,
+											"top": 1645,
+											"width": 159,
+											"height": 13,
+											"text": "«enumeration»"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFxv4Gpa8rNEaE=",
+											"_parent": {
+												"$ref": "AAAAAAFxv4Gpa8rLCBw="
+											},
+											"font": "Arial;13;1",
+											"left": 69,
+											"top": 1660,
+											"width": 159,
+											"height": 13,
+											"text": "NacinPlacanja"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFxv4Gpa8rOX28=",
+											"_parent": {
+												"$ref": "AAAAAAFxv4Gpa8rLCBw="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"width": 80.9072265625,
+											"height": 13,
+											"text": "(from Model1)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFxv4Gpa8rPnsk=",
+											"_parent": {
+												"$ref": "AAAAAAFxv4Gpa8rLCBw="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 64,
+									"top": 1640,
+									"width": 169,
+									"height": 38,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFxv4Gpa8rMz2s="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAFxv4Gpa8rNEaE="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAFxv4Gpa8rOX28="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFxv4Gpa8rPnsk="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAFxv4Gpa8rQ95c=",
+									"_parent": {
+										"$ref": "AAAAAAFxv4Gpa8rKC5M="
+									},
+									"model": {
+										"$ref": "AAAAAAFxv4GpacrI1GQ="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFxv4HpWNBg8JA=",
+											"_parent": {
+												"$ref": "AAAAAAFxv4Gpa8rQ95c="
+											},
+											"model": {
+												"$ref": "AAAAAAFxv4Hoo8/6leM="
+											},
+											"font": "Arial;13;0",
+											"left": 69,
+											"top": 1683,
+											"width": 159,
+											"height": 13,
+											"text": "+kartica",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFxv4IKfNULMFc=",
+											"_parent": {
+												"$ref": "AAAAAAFxv4Gpa8rQ95c="
+											},
+											"model": {
+												"$ref": "AAAAAAFxv4IJx9SlTa4="
+											},
+											"font": "Arial;13;0",
+											"left": 69,
+											"top": 1698,
+											"width": 159,
+											"height": 13,
+											"text": "+online",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFxv4I8pNm2rt0=",
+											"_parent": {
+												"$ref": "AAAAAAFxv4Gpa8rQ95c="
+											},
+											"model": {
+												"$ref": "AAAAAAFxv4I8C9lQIdc="
+											},
+											"font": "Arial;13;0",
+											"left": 69,
+											"top": 1713,
+											"width": 159,
+											"height": 13,
+											"text": "+kesNaLicuMjesta",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 64,
+									"top": 1678,
+									"width": 169,
+									"height": 53
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAFxv4Gpa8rRkis=",
+									"_parent": {
+										"$ref": "AAAAAAFxv4Gpa8rKC5M="
+									},
+									"model": {
+										"$ref": "AAAAAAFxv4GpacrI1GQ="
+									},
+									"font": "Arial;13;0",
+									"left": 64,
+									"top": 1731,
+									"width": 169,
+									"height": 10
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAFxv4Gpa8rSags=",
+									"_parent": {
+										"$ref": "AAAAAAFxv4Gpa8rKC5M="
+									},
+									"model": {
+										"$ref": "AAAAAAFxv4GpacrI1GQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAFxv4GpbMrTa80=",
+									"_parent": {
+										"$ref": "AAAAAAFxv4Gpa8rKC5M="
+									},
+									"model": {
+										"$ref": "AAAAAAFxv4GpacrI1GQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 64,
+							"top": 1640,
+							"width": 169,
+							"height": 101,
+							"nameCompartment": {
+								"$ref": "AAAAAAFxv4Gpa8rLCBw="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAFxv4Gpa8rQ95c="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAFxv4Gpa8rRkis="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAFxv4Gpa8rSags="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAFxv4GpbMrTa80="
+							}
 						}
 					]
 				},
@@ -28330,6 +28552,44 @@
 						"$ref": "AAAAAAFxtXWCWQvS1qE="
 					},
 					"name": "IObavjestavanje"
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAFxv4GpacrI1GQ=",
+					"_parent": {
+						"$ref": "AAAAAAFxtXWCWQvS1qE="
+					},
+					"name": "NacinPlacanja",
+					"stereotype": "enumeration",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFxv4Hoo8/6leM=",
+							"_parent": {
+								"$ref": "AAAAAAFxv4GpacrI1GQ="
+							},
+							"name": "kartica",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFxv4IJx9SlTa4=",
+							"_parent": {
+								"$ref": "AAAAAAFxv4GpacrI1GQ="
+							},
+							"name": "online",
+							"type": ""
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFxv4I8C9lQIdc=",
+							"_parent": {
+								"$ref": "AAAAAAFxv4GpacrI1GQ="
+							},
+							"name": "kesNaLicuMjesta",
+							"type": ""
+						}
+					]
 				}
 			]
 		}
