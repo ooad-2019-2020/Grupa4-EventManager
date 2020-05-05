@@ -18352,7 +18352,7 @@
 											"top": 1125,
 											"width": 133.5546875,
 											"height": 13,
-											"text": "+obracunajTr(): Double",
+											"text": "+dajObracun(): Double",
 											"horizontalAlignment": 0
 										}
 									],
@@ -45349,7 +45349,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFx3phdvzMAVPs="
 							},
-							"name": "obracunajTr",
+							"name": "dajObracun",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
