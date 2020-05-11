@@ -2309,7 +2309,7 @@
 											"top": 523,
 											"width": 467.15576171875,
 											"height": 11,
-											"text": "-odgovorniKorisnik: FizickoLice",
+											"text": "-odgovorniKorisnik: list<FizickoLice>",
 											"horizontalAlignment": 0
 										},
 										{
@@ -37957,9 +37957,7 @@
 							},
 							"name": "odgovorniKorisnik",
 							"visibility": "private",
-							"type": {
-								"$ref": "AAAAAAFxtYqIsQz9xxo="
-							}
+							"type": "list<FizickoLice>"
 						},
 						{
 							"_type": "UMLAttribute",
