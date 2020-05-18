@@ -1,6 +1,6 @@
 using System;
 
-namespace proba.Models
+namespace WebApplication1.Models
 {
     public class ErrorViewModel
     {
