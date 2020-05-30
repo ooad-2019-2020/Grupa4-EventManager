@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace implementacija.Models
 {
-    public class TipFizickogLica
+    interface IKonverzijaBAMEur
     {
     }
 }
