@@ -17,5 +17,14 @@ public static int ID { get; set; }
 
         public virtual ICollection<Komentar> Komentar { get; set; }
         public virtual ICollection<Proxy> Proxy { get; set; }
+        internal IProxyCom ProxyCom { get; set; }
+        public virtual EventManager EventManager { get; set; }
+        public virtual ICollection<Obavijest> Obavijest { get; set; }
+        internal IObavjestenje Obavjestenje { get; set; }
+        
+
+
+
+
     }
 }
