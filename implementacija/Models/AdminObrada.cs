@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace implementacija.Models
 {
-    interface IFizckoLice
+    public class AdminObrada
     {
     }
 }

@@ -5,10 +5,7 @@ using System.Threading.Tasks;
 
 namespace implementacija.Models
 {
-    public class Gost
+    public class NacinPlacanja
     {
-        public static int brojacPosjete { get; }
-        public Boolean zeliRegistraciju { get; set; }
-
     }
 }
