@@ -7,5 +7,6 @@ namespace implementacija.Models
 {
     public class Admin
     {
+        public string ime { get; set; }
     }
 }
