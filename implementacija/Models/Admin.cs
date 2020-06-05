@@ -11,6 +11,6 @@ namespace implementacija.Models
 
         //dio u kojem se definisu veze sa ostalim klasama
         public virtual Korisnik Korisnik { get; set; }
-        public virtual 
+        
     }
 }
