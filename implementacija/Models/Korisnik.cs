@@ -27,7 +27,7 @@ namespace implementacija.Models
         public virtual ICollection<Recenzija> Recenzija { get; set; }
         public virtual ICollection<FizickoLice> FizickoLice { get; set; }
         public virtual Sistem Sistem { get; set; }
-
+        public virtual Ustanova Ustanova { get; set; }
 
     }
 }
