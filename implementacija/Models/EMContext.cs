@@ -16,7 +16,7 @@ namespace implementacija.Models
         public DbSet<ArhivaKorisnikaUstanova> ArhivaKorisnikaUstanova { get; set; }
         public DbSet<FizickoLice> FizickoLice { get; set; }
         public DbSet<Obavijest> Obavijest { get; set; }
-        public DbSet<Recenzija> Recenzija { get; set; }
+        public DbSet<Komentar> Recenzija { get; set; }
         public DbSet<Rezervacija> Rezervacija { get; set; }
         public DbSet<Sistem> Sistem { get; set; }
         public DbSet<TipFizickogLica> TipFizickogLica { get; set; }
@@ -24,6 +24,9 @@ namespace implementacija.Models
         public DbSet<Ustanova> Ustanova { get; set; }
         public DbSet<VrstaKarte> VrstaKarte { get; set; }
         public DbSet<Zahtjev> Zahtjev { get; set; }
+        public DbSet<NacinPlacanja> NacinPlacanja { get; set; }
+        public DbSet<VrstaObavijesti> VrstaObavijesti { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,7 +38,7 @@ namespace implementacija.Models
             modelBuilder.Entity<ArhivaKorisnikaUstanova>().ToTable("ArhivaUstanova");
             modelBuilder.Entity<FizickoLice>().ToTable("FizickoLice");
             modelBuilder.Entity<Obavijest>().ToTable("Obavijest");
-            modelBuilder.Entity<Recenzija>().ToTable("Recenzija");
+            modelBuilder.Entity<Komentar>().ToTable("Komentar");
             modelBuilder.Entity<Rezervacija>().ToTable("Rezervacija");
             modelBuilder.Entity<Sistem>().ToTable("Sistem");
             modelBuilder.Entity<TipFizickogLica>().ToTable("TipFizickogLica");
@@ -43,6 +46,9 @@ namespace implementacija.Models
             modelBuilder.Entity<Ustanova>().ToTable("Ustanova");
             modelBuilder.Entity<VrstaKarte>().ToTable("VrstaKarte");
             modelBuilder.Entity<Zahtjev>().ToTable("Zahtjev");
+            modelBuilder.Entity<NacinPlacanja>().ToTable("NacinPlacanja");
+            modelBuilder.Entity<VrstaObavijesti>().ToTable("VrstaObavijesti");
+
 
         }
 
