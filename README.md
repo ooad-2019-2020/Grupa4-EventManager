@@ -99,9 +99,9 @@ ________________________________________________________________________________
 
 •	Guest-neprijavljeni posjetilac,ima mogućnost pregleda osnovnih informacija i kreiranje profila
 
-•	User-prijavljeni korisnik 
+•	Korisnik -prijavljeni korisnik (korisnik sa kreiranim korisničkim računom)
 
-•	VIP user-ima iste mogućnosti kao i klasični user,samo što može da odabere određen broj puta popust na neki događaj u mjesecu (odnosno godini) u kojem je proglašen za VIP i ima veću prednost prilikom rezervacije u odnosu na klasičnog usera
+•	VIP korisnik -ima iste mogućnosti kao i klasični korisnik,samo što može da odabere određen broj puta popust na neki događaj u mjesecu (odnosno godini) u kojem je proglašen za VIP i ima veću prednost prilikom rezervacije u odnosu na klasičnog usera
 
 •	Ustanova-korisnik koji predstavlja pravno lice,organizator događaja
 
