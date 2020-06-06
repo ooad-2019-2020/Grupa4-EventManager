@@ -1,0 +1,54 @@
+﻿@model implementacija.Models.Komentar
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Komentar</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.recenzija)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.recenzija)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.brojZvjezdica)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.brojZvjezdica)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.datumOstavljanja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.datumOstavljanja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.neprimjerenKomentar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.neprimjerenKomentar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Korisnik)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Korisnik.KorisnikId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dogadjaj)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dogadjaj.DogadjajId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.KomentarId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

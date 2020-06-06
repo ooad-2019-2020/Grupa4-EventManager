@@ -1,0 +1,65 @@
+﻿@model IEnumerable<implementacija.Models.Komentar>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.recenzija)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.brojZvjezdica)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datumOstavljanja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.neprimjerenKomentar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Korisnik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dogadjaj)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.recenzija)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.brojZvjezdica)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datumOstavljanja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.neprimjerenKomentar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Korisnik.KorisnikId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dogadjaj.DogadjajId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.KomentarId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.KomentarId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.KomentarId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
