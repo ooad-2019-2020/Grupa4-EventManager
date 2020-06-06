@@ -1,0 +1,59 @@
+﻿@model implementacija.Models.Dogadjaj
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Dogadjaj</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DogadjajId" />
+            <div class="form-group">
+                <label asp-for="UstanovaId" class="control-label"></label>
+                <select asp-for="UstanovaId" class="form-control" asp-items="ViewBag.UstanovaId"></select>
+                <span asp-validation-for="UstanovaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KorisnikId" class="control-label"></label>
+                <select asp-for="KorisnikId" class="form-control" asp-items="ViewBag.KorisnikId"></select>
+                <span asp-validation-for="KorisnikId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="kapacitet" class="control-label"></label>
+                <input asp-for="kapacitet" class="form-control" />
+                <span asp-validation-for="kapacitet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cijena" class="control-label"></label>
+                <input asp-for="cijena" class="form-control" />
+                <span asp-validation-for="cijena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datumDogadjaja" class="control-label"></label>
+                <input asp-for="datumDogadjaja" class="form-control" />
+                <span asp-validation-for="datumDogadjaja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="trenutniKapacitet" class="control-label"></label>
+                <input asp-for="trenutniKapacitet" class="form-control" />
+                <span asp-validation-for="trenutniKapacitet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
