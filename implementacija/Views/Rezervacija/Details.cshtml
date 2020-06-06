@@ -1,0 +1,72 @@
+﻿@model implementacija.Models.Rezervacija
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Rezervacija</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.osobaRezervacija)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.osobaRezervacija)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cijena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cijena)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.brojRezervisanihMjesta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.brojRezervisanihMjesta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.datumRezervacije)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.datumRezervacije)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ukupnoZaUplatu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ukupnoZaUplatu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.datumDogadjaja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.datumDogadjaja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VrstaKarte)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VrstaKarte.VrstaKarteId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ustanova)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ustanova.UstanovaId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dogadjaj)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dogadjaj.DogadjajId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.RezervacijaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

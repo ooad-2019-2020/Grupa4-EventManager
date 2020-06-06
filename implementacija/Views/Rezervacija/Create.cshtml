@@ -1,0 +1,70 @@
+﻿@model implementacija.Models.Rezervacija
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Rezervacija</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="osobaRezervacija" class="control-label"></label>
+                <input asp-for="osobaRezervacija" class="form-control" />
+                <span asp-validation-for="osobaRezervacija" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UstanovaId" class="control-label"></label>
+                <select asp-for="UstanovaId" class ="form-control" asp-items="ViewBag.UstanovaId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DogadjajId" class="control-label"></label>
+                <select asp-for="DogadjajId" class ="form-control" asp-items="ViewBag.DogadjajId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="VrstaKarteId" class="control-label"></label>
+                <select asp-for="VrstaKarteId" class ="form-control" asp-items="ViewBag.VrstaKarteId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="cijena" class="control-label"></label>
+                <input asp-for="cijena" class="form-control" />
+                <span asp-validation-for="cijena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="brojRezervisanihMjesta" class="control-label"></label>
+                <input asp-for="brojRezervisanihMjesta" class="form-control" />
+                <span asp-validation-for="brojRezervisanihMjesta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datumRezervacije" class="control-label"></label>
+                <input asp-for="datumRezervacije" class="form-control" />
+                <span asp-validation-for="datumRezervacije" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ukupnoZaUplatu" class="control-label"></label>
+                <input asp-for="ukupnoZaUplatu" class="form-control" />
+                <span asp-validation-for="ukupnoZaUplatu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datumDogadjaja" class="control-label"></label>
+                <input asp-for="datumDogadjaja" class="form-control" />
+                <span asp-validation-for="datumDogadjaja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

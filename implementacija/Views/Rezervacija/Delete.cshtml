@@ -1,0 +1,75 @@
+﻿@model implementacija.Models.Rezervacija
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Rezervacija</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.osobaRezervacija)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.osobaRezervacija)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cijena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cijena)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.brojRezervisanihMjesta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.brojRezervisanihMjesta)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.datumRezervacije)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.datumRezervacije)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ukupnoZaUplatu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ukupnoZaUplatu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.datumDogadjaja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.datumDogadjaja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VrstaKarte)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VrstaKarte.VrstaKarteId)
+        </dd class>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ustanova)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ustanova.UstanovaId)
+        </dd class>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dogadjaj)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dogadjaj.DogadjajId)
+        </dd class>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="RezervacijaId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
