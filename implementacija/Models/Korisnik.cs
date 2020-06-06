@@ -24,7 +24,7 @@ namespace implementacija.Models
         public virtual ICollection<ArhivaDogadjaja> ArhivaDogadjaja { get; set; }
         public virtual ICollection<Rezervacija> Rezervacija { get; set; }
         public virtual ICollection<Obavijest> Obavijest { get; set; }
-        public virtual ICollection<Recenzija> Recenzija { get; set; }
+        public virtual ICollection<Komentar> Komentar { get; set; }
         public virtual ICollection<FizickoLice> FizickoLice { get; set; }
         public virtual Sistem Sistem { get; set; }
         public virtual Ustanova Ustanova { get; set; }
