@@ -1,0 +1,53 @@
+﻿@model IEnumerable<implementacija.Models.Obavijest>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.tekstObavijesti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datumSlanja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VrstaObavijesti)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Korisnik)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.tekstObavijesti)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datumSlanja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VrstaObavijesti.VrstaObavijestiId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Korisnik.KorisnikId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ObavijestId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ObavijestId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ObavijestId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
