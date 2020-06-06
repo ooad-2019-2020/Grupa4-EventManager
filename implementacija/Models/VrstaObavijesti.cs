@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 
 namespace implementacija.Models
 {
-    public class NacinPlacanja
+    public class VrstaObavijesti
     {
-        public int NacinPlacanjaId { get; set; }
+        public int VrstaObavijestiId { get; set; }
+        public string tekst { get; set; }
 
         //dio u kojem se definisu veze sa ostalim klasama
-        public virtual ICollection<Transakcija> Transakcija { get; set; }
+        public virtual ICollection<Obavijest> Obavijest { get; set; }
     }
 }
