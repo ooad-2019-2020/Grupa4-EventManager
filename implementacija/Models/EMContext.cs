@@ -1,14 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace implementacija.Models
 {
     public class EMContext:DbContext
     {
-        public EMContext(DbContextOptions<EMContext> options) : base(options) { }
+        public EMContext(DbContextOptions<EMContext> options) : base(options) { 
+        }
         
         public DbSet<Korisnik> Korisnik { get; set; }
         public DbSet<Admin> Admin { get; set; }

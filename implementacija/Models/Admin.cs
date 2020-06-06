@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace implementacija.Models
 {
-    public class Admin
+    public class Admin:Korisnik
     {
         public int KorisnikId { get; set; }
 

@@ -4358,7 +4358,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFx/5SwWXV9Svk="
 							},
-							"name": "osobaKojaJeRezervisala",
+							"name": "osobaRezervacija",
 							"type": "INTEGER",
 							"foreignKey": true,
 							"unique": true
@@ -6118,7 +6118,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFyAE0ShXnm+KI="
 							},
-							"name": "brojPosjete",
+							"name": "SistemId",
 							"type": "INTEGER",
 							"primaryKey": true
 						},

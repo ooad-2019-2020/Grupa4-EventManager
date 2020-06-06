@@ -29,5 +29,6 @@ namespace implementacija.Models
         public virtual Sistem Sistem { get; set; }
         public virtual Ustanova Ustanova { get; set; }
 
+       
     }
 }

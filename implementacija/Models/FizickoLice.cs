@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace implementacija.Models
 {
-    public class FizickoLice
+    public class FizickoLice:Korisnik
     {
         public int KorisnikId { get; set; }
         public string ime { get; set; }

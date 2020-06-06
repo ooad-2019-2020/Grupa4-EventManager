@@ -7,5 +7,6 @@ namespace implementacija.Models
 {
     public class ArhivaDogadjaja
     {
+
     }
 }
