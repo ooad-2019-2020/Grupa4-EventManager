@@ -31,7 +31,12 @@ namespace implementacija
            ////ubaciti svoje
                 services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    Configuration.GetConnectionString("DbConnection")));
+
+            services.AddDbContext<EMContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DbConnection")));
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
