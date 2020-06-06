@@ -9,23 +9,23 @@ using implementacija.Models;
 
 namespace implementacija.Controllers
 {
-    public class KomentarsController : Controller
+    public class AdminController : Controller
     {
         private readonly EMContext _context;
 
-        public KomentarsController(EMContext context)
+        public AdminController(EMContext context)
         {
             _context = context;
         }
 
-        // GET: Komentars
+        // GET: Admins
         public async Task<IActionResult> Index()
         {
-            var eMContext = _context.Recenzija.Include(k => k.Dogadjaj).Include(k => k.Korisnik);
+            var eMContext = _context.Admin.Include(a => a.Korisnik);
             return View(await eMContext.ToListAsync());
         }
 
-        // GET: Komentars/Details/5
+        // GET: Admins/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,45 +33,42 @@ namespace implementacija.Controllers
                 return NotFound();
             }
 
-            var komentar = await _context.Recenzija
-                .Include(k => k.Dogadjaj)
-                .Include(k => k.Korisnik)
-                .FirstOrDefaultAsync(m => m.KomentarId == id);
-            if (komentar == null)
+            var admin = await _context.Admin
+                .Include(a => a.Korisnik)
+                .FirstOrDefaultAsync(m => m.AdminId == id);
+            if (admin == null)
             {
                 return NotFound();
             }
 
-            return View(komentar);
+            return View(admin);
         }
 
-        // GET: Komentars/Create
+        // GET: Admins/Create
         public IActionResult Create()
         {
-            ViewData["DogadjajId"] = new SelectList(_context.Dogadjaj, "DogadjajId", "DogadjajId");
             ViewData["KorisnikId"] = new SelectList(_context.Korisnik, "KorisnikId", "KorisnikId");
             return View();
         }
 
-        // POST: Komentars/Create
+        // POST: Admins/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("KomentarId,recenzija,brojZvjezdica,KorisnikId,datumOstavljanja,DogadjajId,neprimjerenKomentar")] Komentar komentar)
+        public async Task<IActionResult> Create([Bind("AdminId,KorisnikId,ime")] Admin admin)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(komentar);
+                _context.Add(admin);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DogadjajId"] = new SelectList(_context.Dogadjaj, "DogadjajId", "DogadjajId", komentar.DogadjajId);
-            ViewData["KorisnikId"] = new SelectList(_context.Korisnik, "KorisnikId", "KorisnikId", komentar.KorisnikId);
-            return View(komentar);
+            ViewData["KorisnikId"] = new SelectList(_context.Korisnik, "KorisnikId", "KorisnikId", admin.KorisnikId);
+            return View(admin);
         }
 
-        // GET: Komentars/Edit/5
+        // GET: Admins/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,24 +76,23 @@ namespace implementacija.Controllers
                 return NotFound();
             }
 
-            var komentar = await _context.Recenzija.FindAsync(id);
-            if (komentar == null)
+            var admin = await _context.Admin.FindAsync(id);
+            if (admin == null)
             {
                 return NotFound();
             }
-            ViewData["DogadjajId"] = new SelectList(_context.Dogadjaj, "DogadjajId", "DogadjajId", komentar.DogadjajId);
-            ViewData["KorisnikId"] = new SelectList(_context.Korisnik, "KorisnikId", "KorisnikId", komentar.KorisnikId);
-            return View(komentar);
+            ViewData["KorisnikId"] = new SelectList(_context.Korisnik, "KorisnikId", "KorisnikId", admin.KorisnikId);
+            return View(admin);
         }
 
-        // POST: Komentars/Edit/5
+        // POST: Admins/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("KomentarId,recenzija,brojZvjezdica,KorisnikId,datumOstavljanja,DogadjajId,neprimjerenKomentar")] Komentar komentar)
+        public async Task<IActionResult> Edit(int id, [Bind("AdminId,KorisnikId,ime")] Admin admin)
         {
-            if (id != komentar.KomentarId)
+            if (id != admin.AdminId)
             {
                 return NotFound();
             }
@@ -105,12 +101,12 @@ namespace implementacija.Controllers
             {
                 try
                 {
-                    _context.Update(komentar);
+                    _context.Update(admin);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!KomentarExists(komentar.KomentarId))
+                    if (!AdminExists(admin.AdminId))
                     {
                         return NotFound();
                     }
@@ -121,12 +117,11 @@ namespace implementacija.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DogadjajId"] = new SelectList(_context.Dogadjaj, "DogadjajId", "DogadjajId", komentar.DogadjajId);
-            ViewData["KorisnikId"] = new SelectList(_context.Korisnik, "KorisnikId", "KorisnikId", komentar.KorisnikId);
-            return View(komentar);
+            ViewData["KorisnikId"] = new SelectList(_context.Korisnik, "KorisnikId", "KorisnikId", admin.KorisnikId);
+            return View(admin);
         }
 
-        // GET: Komentars/Delete/5
+        // GET: Admins/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -134,32 +129,31 @@ namespace implementacija.Controllers
                 return NotFound();
             }
 
-            var komentar = await _context.Recenzija
-                .Include(k => k.Dogadjaj)
-                .Include(k => k.Korisnik)
-                .FirstOrDefaultAsync(m => m.KomentarId == id);
-            if (komentar == null)
+            var admin = await _context.Admin
+                .Include(a => a.Korisnik)
+                .FirstOrDefaultAsync(m => m.AdminId == id);
+            if (admin == null)
             {
                 return NotFound();
             }
 
-            return View(komentar);
+            return View(admin);
         }
 
-        // POST: Komentars/Delete/5
+        // POST: Admins/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var komentar = await _context.Recenzija.FindAsync(id);
-            _context.Recenzija.Remove(komentar);
+            var admin = await _context.Admin.FindAsync(id);
+            _context.Admin.Remove(admin);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool KomentarExists(int id)
+        private bool AdminExists(int id)
         {
-            return _context.Recenzija.Any(e => e.KomentarId == id);
+            return _context.Admin.Any(e => e.AdminId == id);
         }
     }
 }

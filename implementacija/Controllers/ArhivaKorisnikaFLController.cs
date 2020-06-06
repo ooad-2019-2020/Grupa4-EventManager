@@ -9,11 +9,11 @@ using implementacija.Models;
 
 namespace implementacija.Controllers
 {
-    public class ArhivaKorisnikaFLsController : Controller
+    public class ArhivaKorisnikaFLController : Controller
     {
         private readonly EMContext _context;
 
-        public ArhivaKorisnikaFLsController(EMContext context)
+        public ArhivaKorisnikaFLController(EMContext context)
         {
             _context = context;
         }
