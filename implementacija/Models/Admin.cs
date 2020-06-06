@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace implementacija.Models
 {
-    public class Admin:Korisnik
+    public class Admin
     {
+        public int AdminId { get; set; }
         public int KorisnikId { get; set; }
-
+        public string ime { get; set; }
         //dio u kojem se definisu veze sa ostalim klasama
         public virtual Korisnik Korisnik { get; set; }
         

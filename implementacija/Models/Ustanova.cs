@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace implementacija.Models
 {
-    public class Ustanova:Korisnik
+    public class Ustanova
     {
+        public int UstanovaId { get; set; }
         public int KorisnikId { get; set; }
         public string brojRacunaUBanci { get; set; }
         public string brojTelefona { get; set; }

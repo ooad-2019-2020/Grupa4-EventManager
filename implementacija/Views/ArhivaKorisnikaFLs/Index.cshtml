@@ -1,0 +1,71 @@
+﻿@model IEnumerable<implementacija.Models.ArhivaKorisnikaFL>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.izvrsioTransakciju)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ukupnoUplatio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.bioOdgovornoLice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.kreiraoRacun)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.napustioApp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Korisnik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipFizickogLica)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.izvrsioTransakciju)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ukupnoUplatio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bioOdgovornoLice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kreiraoRacun)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.napustioApp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Korisnik.KorisnikId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipFizickogLica.TipFizickogLicaId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ArhivaKorisnikaFLId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ArhivaKorisnikaFLId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ArhivaKorisnikaFLId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
