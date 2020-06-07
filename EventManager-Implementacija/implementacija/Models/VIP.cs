@@ -8,7 +8,6 @@ namespace implementacija.Models
     public class VIP
     {
         public int VIPId { get; set; }
-        public int FizickoLiceId { get; set; }
         public int KorisnikId { get; set; }
         public string ime { get; set; }
         public string prezime { get; set; }

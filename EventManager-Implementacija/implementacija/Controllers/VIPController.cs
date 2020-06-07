@@ -18,14 +18,14 @@ namespace implementacija.Controllers
             _context = context;
         }
 
-        // GET: VIPs
+        // GET: VIP
         public async Task<IActionResult> Index()
         {
             var eMContext = _context.VIP.Include(v => v.Korisnik);
             return View(await eMContext.ToListAsync());
         }
 
-        // GET: VIPs/Details/5
+        // GET: VIP/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,19 +44,19 @@ namespace implementacija.Controllers
             return View(vIP);
         }
 
-        // GET: VIPs/Create
+        // GET: VIP/Create
         public IActionResult Create()
         {
             ViewData["KorisnikId"] = new SelectList(_context.Korisnik, "KorisnikId", "KorisnikId");
             return View();
         }
 
-        // POST: VIPs/Create
+        // POST: VIP/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("VIPId,FizickoLiceId,KorisnikId,ime,prezime,brojKartice,datumRodjenja,tipFizickogLica,stanjeRacuna,odgovornoLice,uplatioClanarinu,iznosClanarine,trajanjeClanarine")] VIP vIP)
+        public async Task<IActionResult> Create([Bind("VIPId,KorisnikId,ime,prezime,brojKartice,datumRodjenja,tipFizickogLica,stanjeRacuna,odgovornoLice,uplatioClanarinu,iznosClanarine,trajanjeClanarine")] VIP vIP)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace implementacija.Controllers
             return View(vIP);
         }
 
-        // GET: VIPs/Edit/5
+        // GET: VIP/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -85,12 +85,12 @@ namespace implementacija.Controllers
             return View(vIP);
         }
 
-        // POST: VIPs/Edit/5
+        // POST: VIP/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("VIPId,FizickoLiceId,KorisnikId,ime,prezime,brojKartice,datumRodjenja,tipFizickogLica,stanjeRacuna,odgovornoLice,uplatioClanarinu,iznosClanarine,trajanjeClanarine")] VIP vIP)
+        public async Task<IActionResult> Edit(int id, [Bind("VIPId,KorisnikId,ime,prezime,brojKartice,datumRodjenja,tipFizickogLica,stanjeRacuna,odgovornoLice,uplatioClanarinu,iznosClanarine,trajanjeClanarine")] VIP vIP)
         {
             if (id != vIP.VIPId)
             {
@@ -121,7 +121,7 @@ namespace implementacija.Controllers
             return View(vIP);
         }
 
-        // GET: VIPs/Delete/5
+        // GET: VIP/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -140,7 +140,7 @@ namespace implementacija.Controllers
             return View(vIP);
         }
 
-        // POST: VIPs/Delete/5
+        // POST: VIP/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
