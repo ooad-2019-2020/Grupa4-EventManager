@@ -660,7 +660,7 @@
 											"top": 295,
 											"width": 182,
 											"height": 13,
-											"text": "Omogućavanje kupovine"
+											"text": "Omogućavanje rezervacije"
 										},
 										{
 											"_type": "LabelView",
@@ -1445,7 +1445,7 @@
 											"top": 559,
 											"width": 158,
 											"height": 13,
-											"text": "Validacija narudžbe"
+											"text": "Validacija unesenog"
 										},
 										{
 											"_type": "LabelView",
@@ -3965,7 +3965,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFxLcUDmFLxOj4="
 					},
-					"name": "Validacija narudžbe"
+					"name": "Validacija unesenog"
 				},
 				{
 					"_type": "UMLMergeNode",
@@ -4391,7 +4391,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFxLcarEFMBBek="
 							},
-							"name": "Omogućavanje kupovine"
+							"name": "Omogućavanje rezervacije"
 						},
 						{
 							"_type": "UMLActivityFinalNode",
