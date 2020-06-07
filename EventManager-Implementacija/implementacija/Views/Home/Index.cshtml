@@ -74,8 +74,11 @@
                                 <a href="#" class="list-group-item list-group-item-action">Ustanova1</a>
                                 <a href="#" class="list-group-item list-group-item-action">Ustanova2</a>
                                 <a href="#" class="list-group-item list-group-item-action">Ustanova3</a>
-                                <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
-                            </div> <a class="btn btn-link" href="#" contenteditable="true" style="">Pročitajte više</a>
+
+                            </div>
+                            <p>
+                                <a asp-controller="Ustanova" asp-action="Index">Pročitajte više</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -83,7 +86,10 @@
                     <div class="card text-center">
                         <div class="card-body p-4">
                             <h3>Registracija</h3>
-                            <p class="my-3 lead">Budite u korak sa događanjima!</p> <a class="btn btn-link" href="#">Registracija</a>
+                            <p class="my-3 lead">Budite u korak sa događanjima!</p> 
+                            <p>
+                                <a asp-controller="Korisnik" asp-action="Create">Registracija</a>
+                            </p>
                         </div>
                     </div>
                 </div>
