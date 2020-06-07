@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using implementacija.Models;
 
 
 namespace implementacija.Models
@@ -51,6 +52,9 @@ namespace implementacija.Models
 
 
         }
+
+
+        public DbSet<implementacija.Models.VIP> VIP { get; set; }
 
 
     }
