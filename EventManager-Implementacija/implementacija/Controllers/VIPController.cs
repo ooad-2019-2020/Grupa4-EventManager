@@ -56,7 +56,7 @@ namespace implementacija.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("VIPId,KorisnikId,ime,prezime,brojKartice,datumRodjenja,tipFizickogLica,stanjeRacuna,odgovornoLice,uplatioClanarinu,iznosClanarine,trajanjeClanarine")] VIP vIP)
+        public async Task<IActionResult> Create([Bind("VIPId,KorisnikId,ime,prezime,brojKartice,datumRodjenja,tipFizickogLica,stanjeRacuna,odgovornoLice,uplatioClanarinu,iznosClanarine,trajanjeClanarine,username,password,adresa,email")] VIP vIP)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace implementacija.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("VIPId,KorisnikId,ime,prezime,brojKartice,datumRodjenja,tipFizickogLica,stanjeRacuna,odgovornoLice,uplatioClanarinu,iznosClanarine,trajanjeClanarine")] VIP vIP)
+        public async Task<IActionResult> Edit(int id, [Bind("VIPId,KorisnikId,ime,prezime,brojKartice,datumRodjenja,tipFizickogLica,stanjeRacuna,odgovornoLice,uplatioClanarinu,iznosClanarine,trajanjeClanarine,username,password,adresa,email")] VIP vIP)
         {
             if (id != vIP.VIPId)
             {
