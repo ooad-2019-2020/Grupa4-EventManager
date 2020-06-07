@@ -57,5 +57,8 @@ namespace implementacija.Models
         public DbSet<implementacija.Models.VIP> VIP { get; set; }
 
 
+        public DbSet<implementacija.Models.Registracija> Registracija { get; set; }
+
+
     }
 }

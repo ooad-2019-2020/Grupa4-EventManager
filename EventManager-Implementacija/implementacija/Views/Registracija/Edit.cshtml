@@ -1,0 +1,49 @@
+﻿@model implementacija.Models.Registracija
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Registracija</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="RegistracijaId" />
+            <div class="form-group">
+                <label asp-for="KorisnikId" class="control-label"></label>
+                <select asp-for="KorisnikId" class="form-control" asp-items="ViewBag.KorisnikId"></select>
+                <span asp-validation-for="KorisnikId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FizickoLiceId" class="control-label"></label>
+                <select asp-for="FizickoLiceId" class="form-control" asp-items="ViewBag.FizickoLiceId"></select>
+                <span asp-validation-for="FizickoLiceId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VIPId" class="control-label"></label>
+                <select asp-for="VIPId" class="form-control" asp-items="ViewBag.VIPId"></select>
+                <span asp-validation-for="VIPId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UstanovaId" class="control-label"></label>
+                <select asp-for="UstanovaId" class="form-control" asp-items="ViewBag.UstanovaId"></select>
+                <span asp-validation-for="UstanovaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

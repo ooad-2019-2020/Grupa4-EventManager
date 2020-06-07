@@ -1,0 +1,42 @@
+﻿@model implementacija.Models.Registracija
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Registracija</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Korisnik)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Korisnik.KorisnikId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FizickoLice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FizickoLice.FizickoLiceId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VIP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VIP.VIPId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ustanova)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ustanova.UstanovaId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.RegistracijaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
