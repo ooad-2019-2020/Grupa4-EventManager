@@ -53,7 +53,7 @@ namespace implementacija.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UstanovaId,KorisnikId,brojRacunaUBanci,brojTelefona,stanjeUplata,odgovornoLiceId")] Ustanova ustanova)
+        public async Task<IActionResult> Create([Bind("UstanovaId,KorisnikId,brojRacunaUBanci,brojTelefona,stanjeUplata,odgovornoLiceId,username,password,adresa,email")] Ustanova ustanova)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace implementacija.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UstanovaId,KorisnikId,brojRacunaUBanci,brojTelefona,stanjeUplata,odgovornoLiceId")] Ustanova ustanova)
+        public async Task<IActionResult> Edit(int id, [Bind("UstanovaId,KorisnikId,brojRacunaUBanci,brojTelefona,stanjeUplata,odgovornoLiceId,username,password,adresa,email")] Ustanova ustanova)
         {
             if (id != ustanova.UstanovaId)
             {
